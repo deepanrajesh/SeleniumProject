@@ -17,7 +17,7 @@ public class skillrarydemoapppage {
 	@FindBy(name="addresstype")
 	private WebElement categoryDropdown;
 	@FindBy(xpath="//a[text()='Contact Us']")
-	private WebElement contactuslink;
+	private WebElement contactUsLink;
 	
 //initialization
 	public skillrarydemoapppage(WebDriver driver) {
@@ -40,11 +40,13 @@ public class skillrarydemoapppage {
 		web.dropdown(categoryDropdown,index);
 	}
 	public void clickContactUs() {
-		contactuslink.click();
+		contactUsLink.click();
 	
 	}
-		public WebElement getContactUs() {
-			return getContactUs();
+	
+		
+	public WebElement getcontactus() {
+		return contactUsLink;
 	}
-
+		
 }

@@ -1,3 +1,4 @@
+
 package pompages;
 
 import org.openqa.selenium.WebDriver;
@@ -11,8 +12,10 @@ public class CoreJavaForSeleniumPage {
 	
 	@FindBy(xpath="//h2[@class='list_title']")
 	private WebElement pageHeader;
-	@FindBy(xpath="//a[text()='Core Java ForSelenium Training']")
-	private WebElement coreJavaForSeleniumLink;
+	
+	
+	@FindBy(xpath="//a[text()=' Core Java For Selenium Trainin']")
+	private WebElement coreJavaSeleniumLink;
 	
 	//Initialisation
 	public CoreJavaForSeleniumPage(WebDriver driver) {
@@ -23,8 +26,8 @@ public class CoreJavaForSeleniumPage {
 		return pageHeader.getText();
 	}
 	
-	public void clickCoreJavaForSeleniumLink() {
-		coreJavaForSeleniumLink.click();
+	public void CoreJavaSeleniumLink() {
+		coreJavaSeleniumLink.click();
 	}
 
 }

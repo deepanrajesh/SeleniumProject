@@ -9,7 +9,7 @@ import GenericLibraries.WebDriverUtility;
 
 public class seleniumtrainingpage {
 	
-	@FindBy(xpath="//h1[@class=page-header']")
+	@FindBy(xpath="//h1[@class='page-header']")
 	private WebElement pageheader;
 	
 	@FindBy(id="add")
@@ -29,7 +29,7 @@ public class seleniumtrainingpage {
 	
 	//utilization
 	
-	public WebElement getpageHeader() {
+	public WebElement getPageHeader() {
 		return pageheader;
 	}
 public void doubleClickPlusButton(WebDriverUtility web) {
@@ -40,6 +40,10 @@ public void doubleClickPlusButton(WebDriverUtility web) {
 	public void clickAddtoCart() {
 		addToCartButton.click();
 	}
+	//public String getItemAddedMessage() {
+		//return itemAddedMessage.getText();
+	//}
+	
 public WebElement getItemAddedMessage() {
 	return itemAddedMessage;
 }

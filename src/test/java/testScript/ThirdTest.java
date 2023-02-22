@@ -9,13 +9,15 @@ public class ThirdTest extends BaseClass{
 	@Test
 	
 	
-	public void ThirdTest() throws InterruptedException{
+	public void thirdTest() throws InterruptedException{
 		SoftAssert soft =new SoftAssert();
 		home.searchFor("core java for the selenium");
-		soft.assertEquals(coreJava.getPageHeader(),"CORE JAVA FOR SELENIUM");
 		
-		coreJava.clickCoreJavaForSeleniumLink();
-		soft.assertEquals(javaVideo.getPageHeader(), "core Java For Selenium Training");
+		soft.assertEquals(coreJava.getPageHeader(),"CORE JAVA FOR SELENIUM");
+		coreJava.CoreJavaSeleniumLink();
+		
+		
+		soft.assertEquals(javaVideo.getPageHeader(),"Core Java For Selenium Training");
 		
 		javaVideo.clickclosecookies();
 		web.switchToFrame();
